@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <link href="css/signin.css" rel="stylesheet" type="text/css">
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="lang">
+      <div class="row">
+          <a class="accent" href="/login-en">EN</a>
+          <p class="line">|</p>
+          <a class="active accent" href="/login-pl">PL</a>
+      </div>
+    </div>
+    <div class="container">
+        <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                    <h2>Zaloguj się na swoje konto</h2>
+                    <hr/>
+                    <p>Proszę podać adres email i hasło</p>
+                </div>
+                <form action="/login" method="post" id="Login">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="inputUsername" name="username" placeholder="Nazwa użytkownika">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Hasło">
+                    </div>
+                    <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+                    <button type="submit" class="btn btn-primary">Zaloguj się</button>
+                    <div>
+                    {{#message}}
+                        {{message}}
+                    {{/message}}
+                    </div>
+                    <hr/>
+                    <div class="register">
+                        Nie masz jeszcze konta? <a href="/registration">Zarejestruj się</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+ </body>
+</html>

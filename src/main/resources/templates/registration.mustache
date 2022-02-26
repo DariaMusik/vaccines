@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <link href="css/signin.css" rel="stylesheet" type="text/css">
+
+    <title>Register</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="login-form">
+        <div class="main-div">
+            <div class="panel">
+        <h2>Register to add data</h2>
+        <hr/>
+        <p>Please enter your email and password</p>
+        </div>
+            <form action="/registration" method="post" id="Login">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="inputUsername" name="username" placeholder="User name">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Repeat password">
+                </div>
+                <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+                <button type="submit" class="btn btn-primary">Register</button>
+                <hr/>
+                <div class="register">
+                    Already have an account? <a href="/login">Log in</a>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+ </body>
+</html>

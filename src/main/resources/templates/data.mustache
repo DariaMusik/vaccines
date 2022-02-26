@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Notifacations</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <table>
+            <th>
+                <td>
+                    VEARS_ID
+                </td>
+
+                <td>
+                    AGE_YRS
+                </td>
+
+                <td>
+                    SEX
+                </td>
+
+                <td>
+                    NOTIFICATION_ID
+                </td>
+
+                <td>
+                    RPT_DATE
+                </td>
+
+                <td>
+                    STATE
+                </td>
+
+                <td>
+                    TYPE_OF_VACCINE
+                </td>
+            </th>
+
+            {{#patients}}
+            {{#notifications}}
+
+            <tr>
+                <td>
+                    {{VEARS_ID}}
+                </td>
+
+                <td>
+                    {{AGE_YRS}}
+                </td>
+
+                <td>
+                    {{SEX}}
+                </td>
+
+                <td>
+                    {{NOTIFICATION_ID}}
+                </td>
+
+                <td>
+                    {{RPT_DATE}}
+                </td>
+
+                <td>
+                    {{STATE}}
+                </td>
+
+                <td>
+                    {{TYPE_OF_VACCINE}}
+                </td>
+            </tr>
+
+            {{/notifications}}
+            {{/patients}}
+            </table>
+        </div>
+    </body>
+</html>

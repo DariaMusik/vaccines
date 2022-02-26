@@ -1,0 +1,147 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e9ecef;
+    padding:40px;
+}
+
+.form-heading {
+    color:#fff;
+    font-size:23px;
+}
+
+.panel h2 {
+    color: #2F3675;
+    font-size:20px;
+    margin:0 0 8px 0;
+    font-weight: 2000;
+    letter-spacing: 1.2px;
+}
+
+.panel p {
+    font-weight: 400;
+    color: #2F3675;
+    font-size:14px;
+    margin-bottom:30px;
+    line-height:24px;
+    letter-spacing: 1px;
+}
+
+.adddata-form .fild {
+    font-family: 'Roboto', sans-serif;
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #d4d4d4;
+    width:90%;
+    font-size: 12px;
+    height: 30px;
+    padding: 0px 2%;
+    letter-spacing: 1.2px;
+}
+
+.form-control-textarea {
+    font-family: 'Roboto', sans-serif;
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #d4d4d4;
+    width:90%;
+    font-size: 12px;
+    padding: 7px 2%;
+    letter-spacing: 1.2px;
+    margin-bottom: -5px;
+}
+
+.adddata-form .form-group-a .form-control-a {
+    height: 60px;
+}
+
+.main-div {
+    margin: 0px auto 0px;
+    max-width: 55%;
+    padding: 50px 70px 50px 71px;
+}
+
+.adddata-form .form-fild-group {
+    margin-bottom: 10px;
+}
+
+.adddata-form { 
+    text-align:center;
+}
+
+.adddata-form  .button {
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    background-color: #C5CAE9;
+    border-radius: 0;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 1000;
+    width: 90%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.register {
+    text-align: center;
+    margin-bottom:30px;
+    margin-top:10px;
+    font-weight: 400;
+    color:#2F3675;
+    font-size:14px;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.register a {
+    color: #9CA2E3;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.botto-text {
+    color: #ffffff;
+    font-size: 14px;
+    margin: auto;
+}
+
+.back { 
+    text-align: left; 
+    margin-top:10px;
+}
+
+.back a {
+    color: #444444;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 1000;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid;
+    height: 1px;
+    color: #9CA2E3;
+}
+
+textarea {
+    resize: none;
+}
+
+.accent {
+    color: slategray;
+}
+
+.accent:hover {
+    font-weight: 700;
+    color: #9CA2E3;
+}
+
+.line {
+    padding-right: 2px;
+    padding-left: 2px;
+    color:grey;
+}
+
+.line:hover {
+    color: grey;
+}

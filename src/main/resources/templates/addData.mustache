@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <link href="css/adddata.css" rel="stylesheet" type="text/css">
+
+    <title>Add data</title>
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/home">About the application</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link accent" href="/symptom-en">View analysis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link accent" href="/adddata-en">Add data</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex flex-align-end">
+                        <a class="nav-link active accent" aria-current="page" href="\registration-en">Register</a>
+                        <a class="nav-link active accent" aria-current="page" href="\login-en">Sign in</a>
+
+                        <a class="nav-link active accent" href="\adddata-en">EN</a>
+                        <p class="nav-link line">|</p>
+                        <a class="nav-link active accent" href="\adddata-pl">PL</a>
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+    <div class="container">
+        <div class="adddata-form">
+            <div class="main-div add-data">
+                <div class="panel">
+                    <h2>Add data</h2>
+                    <hr/>
+                </div>
+                <form method="post" action="addNewNotificationEN" id="Login">
+                    <div class="form-fild-group">
+                        <input type="text" class="fild" id="inputAge" name="age" placeholder="Age:">
+                    </div>
+                    <div class="form-fild-group">
+                        <select class="fild" id="inputSex" name="sex">
+                            <option value="F">Female</option>
+                            <option value="M">Male</option>
+                        </select><br>
+                    </div>
+                    <div class="form-fild-group">
+                        <textarea id="inputAbode" name="state" class="form-control-textarea" placeholder="Abode:" rows="3"></textarea>
+                    </div>
+                    <div class="form-fild-group">
+                        <textarea id="inputSymptoms" name="description_of_symptoms" class="form-control-textarea" placeholder="Description of symptoms, side effects:" rows="10"></textarea>
+                    </div>
+                    <div class="form-fild-group">
+                        <select class="fild" id="type_of_vaccines" name="type_of_vaccines">
+                           <option value="PFIZER\BIONTECH">Pfizer</option>
+                           <option value="MODERNA">Moderna</option>
+                           <option value="ASTRAZENEKA">AstraZeneka</option>
+                           <option value="JOHNSON&JOHNSON">Johnson & Johnson</option>
+                        </select>
+                    </div>
+                    <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+                    <button type="submit" class="button">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ </body>
+</html>
+

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <link href="css/signin.css" rel="stylesheet" type="text/css">
+
+    <title>Rejestracja</title>
+  </head>
+  <body>
+    <div class="lang">
+          <div class="row">
+              <a class="accent" href="\registration-en">EN</a>
+              <p class="line">|</p>
+              <a class="active accent" href="\registration-pl">PL</a>
+          </div>
+     </div>
+    <div class="container">
+        <div class="login-form">
+        <div class="main-div">
+            <div class="panel">
+        <h2>Zarejestruj się by dodać dane</h2>
+        <hr/>
+        <p>Proszę podać swój email oraz hasło</p>
+        </div>
+            <form action="/registration" method="post" id="Login">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Adres email">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="inputUsername" name="username" placeholder="Nazwa użytkownika">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Hasło">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Powtórz hasło">
+                </div>
+                <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+                <button type="submit" class="btn btn-primary">Zarejestruj się</button>
+                <hr/>
+                <div class="register">
+                    Jesteś już zarejestrowany? <a href="/login">Zaloguj się</a>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+ </body>
+</html>
